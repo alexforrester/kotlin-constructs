@@ -6,10 +6,10 @@ value class WidthInMillimetres(val value: Int)
 @JvmInline
 value class HeightInMillimetres(val value: Int)
 
-data class Rectangle(val widthInMillimetres: WidthInMillimetres, val heightInMillimetres: HeightInMillimetres)
+val widthInMillimetres = WidthInMillimetres(10)
+val heightInMillimetres = HeightInMillimetres(50)
 
-val widthInMillimetres = WidthInMillimetres(100)
-val heightInMillimetres = HeightInMillimetres(500)
+data class Rectangle(val widthInMillimetres: WidthInMillimetres, val heightInMillimetres: HeightInMillimetres)
 
 fun main() {
 

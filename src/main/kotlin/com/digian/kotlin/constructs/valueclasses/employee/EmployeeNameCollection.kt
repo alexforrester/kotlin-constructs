@@ -1,9 +1,9 @@
 package com.digian.kotlin.constructs.valueclasses.employee
 
 import com.digian.kotlin.constructs.valueclasses.name.Name
-import com.digian.kotlin.constructs.valueclasses.name.NameFormat
 
-class EmployeeNameInterface(val userId: String, val name: NameFormat, val age: Int, val occupation: Occupation)
+class EmployeeNameCollection(val userId: String, val names: List<Name>, val age: Int, val occupation: Occupation)
+
 
 fun main() {
 
@@ -11,10 +11,14 @@ fun main() {
     val name = Name("Sarah Smith")
     val age = 26
     val occupation = Occupation("Chef")
-    val employee = EmployeeNameInterface(userId, name, age, occupation)
+
+    val nameList = listOf(name)
+    val employee = EmployeeNameCollection(userId, nameList, age, occupation)
 
     println("Employee's userId is ${employee.userId}")
-    println("Employee's name has Space Character? ${employee.name.containsSpaceCharacter()}")
+    println("Employee's name is ${employee.names[0]}")
     println("Employee's age is ${employee.age}")
     println("Employee's occupation is ${employee.occupation.value}")
+
+    println("List of names: ${nameList[0]}")
 }

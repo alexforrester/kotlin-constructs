@@ -12,6 +12,11 @@ fun main() {
     println("Rectangle created with width ${rectangle.width} and height ${rectangle.height}")
 
     val rectangle2 = Rectangle(50, 10)
+
+    println("Rectangle created with width ${rectangle2.width} and height ${rectangle2.height}")
+
+    val rectangle3 = Rectangle(width = 50, height = 10)
+
     println("Rectangle created with width ${rectangle2.width} and height ${rectangle2.height}")
 
 }
