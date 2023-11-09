@@ -1,5 +1,7 @@
 # kotlin-constructs
 
+[![Kotlin](https://kotlin.link/awesome-kotlin.svg)](https://kotlinlang.org/)  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Examples of using Kotlin language features - The first feature is **value** classes
 
 ### License
