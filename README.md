@@ -6,7 +6,7 @@ Examples of using Kotlin language features - The first feature is **value** clas
 
 ### License
 
-    Copyright 2023 Alex Forrester
+    Copyright 2019 Alex Forrester
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
