@@ -4,7 +4,6 @@ import com.digian.kotlin.constructs.valueclasses.name.Name
 
 class EmployeeNameNullable(val userId: String, val name: Name?, val age: Int, val occupation: Occupation)
 
-
 fun main() {
 
     val userId = "sarahsmith"

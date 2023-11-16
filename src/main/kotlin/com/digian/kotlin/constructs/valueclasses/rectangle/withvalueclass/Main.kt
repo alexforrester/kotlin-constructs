@@ -6,14 +6,17 @@ value class Width(val value: Int)
 @JvmInline
 value class Height(val value: Int)
 
-data class Rectangle(val width: Width, val height: Height)
+data class Rectangle(val widthInMillimetres: Width, val heightInMillimetres: Height)
+
+val width = Width(10)
+val height = Height(50)
+
+val rectangle = Rectangle(widthInMillimetres = width, heightInMillimetres = height)
 
 fun main() {
 
-    val width = Width(10)
-    val height = Height(50)
 
-    val rectangle = Rectangle(width, height)
+    println("Rectangle created with width ${rectangle.widthInMillimetres} and height ${rectangle.heightInMillimetres}")
 
     // Will not compile
     // val rectangle2 = Rectangle(height, width)

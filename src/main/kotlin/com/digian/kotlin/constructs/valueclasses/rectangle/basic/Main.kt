@@ -1,7 +1,6 @@
 package com.digian.kotlin.constructs.valueclasses.rectangle.basic
 
 
-
 data class Rectangle(val width: Int, val height: Int)
 
 fun main() {

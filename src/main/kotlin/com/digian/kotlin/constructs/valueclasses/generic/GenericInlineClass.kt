@@ -1,8 +1,6 @@
 package com.digian.kotlin.constructs.valueclasses.generic
 
 import com.digian.kotlin.constructs.valueclasses.name.Name
-import kotlin.system.measureNanoTime
-
 
 sealed class Lesson
 data object Maths : Lesson()

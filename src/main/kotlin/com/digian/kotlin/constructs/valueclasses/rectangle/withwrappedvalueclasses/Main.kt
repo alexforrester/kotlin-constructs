@@ -1,6 +1,5 @@
 package com.digian.kotlin.constructs.valueclasses.rectangle.withwrappedvalueclasses
 
-
 @JvmInline
 value class Millimetres(val value: Int)
 

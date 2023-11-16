@@ -1,13 +1,12 @@
 package com.digian.kotlin.constructs.valueclasses.employee
 
-import com.digian.kotlin.constructs.valueclasses.name.Name
 
-
+@JvmInline
+value class Name(val value: String)
 data class Occupation(val value: String)
-class Employee(val userId: String, val name: Name, val age: Int, val occupation: Occupation)
+data class Employee(val userId: String, val name: Name, val age: Int, val occupation: Occupation)
 
 fun main() {
-
     val userId = "sarahsmith"
     val name = Name("Sarah Smith")
     val age = 26
